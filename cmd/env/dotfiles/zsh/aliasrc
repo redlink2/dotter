@@ -70,26 +70,25 @@ alias npstartw3="npm install three"
 alias npbuild="npm run build"
 
 # GIT CTL
-alias cx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotfiles --work-tree=$HOME"
-alias dx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
+alias cx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
 #fresh install
 #0 - rm previous install
-alias dxdel="rm -rf $HOME/cmd/env/git/dotfiles"
+alias cxdel="rm -rf $HOME/cmd/env/git/dotfiles"
 #1 - clone latest version of dotfiles
-alias dxclone="git clone --bare https://github.com/redlink2/dotfiles $HOME/cmd/env/git/dotfiles"
+alias cxclone="git clone --bare https://github.com/redlink2/dotfiles $HOME/cmd/env/git/dotfiles"
 #2 - install dotfiles
-alias dxcheck="dx checkout -f"
+alias cxcheck="cx checkout -f"
 
 #update
 #alias cxbranch="cx branch -m"
 #0 - check status
-alias dxstatus="dx status"
+alias cxstatus="cx status"
 #1 - update specific 
-alias dxalias="dx add ~/cmd/env/dotfiles/zsh/aliasrc"
+alias cxalias="cx add ~/cmd/env/dotfiles/zsh/aliasrc"
 #2 - add commit info with -m flag
-alias dxcommit="dx commit"
+alias cxcommit="cx commit"
 #3 - push update to master
-alias dxpush="dx push"
+alias cxpush="cx push"
 
 # Quick CMDs
 alias cl="clear"
