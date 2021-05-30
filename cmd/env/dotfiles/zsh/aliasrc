@@ -69,17 +69,19 @@ alias npopen="npm run dev"
 alias npstartw3="npm install three"
 alias npbuild="npm run build"
 
+
 # GIT CTL
+#
+# DOTTY DOTFILES
 alias cx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
-#fresh install
+#FRESH INSTALL
 #0 - rm previous install
 alias cxdel="rm -rf $HOME/cmd/env/git/dotfiles"
 #1 - clone latest version of dotfiles
 alias cxclone="git clone --bare https://github.com/redlink2/dotfiles $HOME/cmd/env/git/dotfiles"
 #2 - install dotfiles
 alias cxcheck="cx checkout -f"
-
-#update
+#UPDATE
 #alias cxbranch="cx branch -m"
 #0 - check status
 alias cxstatus="cx status"
@@ -89,6 +91,32 @@ alias cxalias="cx add ~/cmd/env/dotfiles/zsh/aliasrc"
 alias cxcommit="cx commit"
 #3 - push update to master
 alias cxpush="cx push"
+#4 - update local repo with remote
+alias cxpull="cx pull"
+
+# REDLINK2
+alias rl="/usr/bin/git --git-dir=$HOME/cmd/env/git/redlink2.com --work-tree=$HOME/cmd/dev/web/sites/rl2/gitty"
+#FRESH INSTALL
+#0 - rm previous install
+alias rldel="rm -rf $HOME/cmd/env/git/redlink2.com"
+#1 - clone latest version of dotfiles
+alias rlclone="git clone --bare https://github.com/redlink2/dotfiles $HOME/cmd/env/git/redlink2.com"
+#2 - install dotfiles
+alias rlcheck="rl checkout -f"
+#COMMIT AND PUSH
+#alias rlbranch="rl branch -m"
+#0 - check status
+alias rlstatus="rl status"
+#1 - update specific 
+alias rladd="rl add"
+#alias rlalias="rl add ~/cmd/env/dotfiles/zsh/aliasrc"
+#2 - add commit info with -m flag
+alias rlcommit="rl commit"
+#3 - push update to master
+alias rlpush="rl push"
+#4 - update local repo with remote
+alias rlpull="rl pull"
+
 
 # Quick CMDs
 alias cl="clear"
