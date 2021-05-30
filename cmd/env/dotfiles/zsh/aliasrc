@@ -1,0 +1,162 @@
+# Dotfiles Related
+alias zshrc="nvim $HOME/.zshrc"
+alias aliasrc="nvim $HOME/cmd/env/dotfiles/zsh/aliasrc"
+alias funcrc="nvim $HOME/cmd/env/dotfiles/zsh/funcrc"
+alias trashrc="nvim $HOME/cmd/env/dotfiles/zsh/trashrc"
+alias zpluginrc="nvim $HOME/cmd/env/dotfiles/zsh/pluginrc"
+alias exportrc="nvim $HOME/cmd/env/dotfiles/zsh/exportrc"
+alias nvimrc="nvim $HOME/.config/nvim/init.vim"
+alias vimrc="nvim $HOME/cmd/env/dotfiles/vim/"
+alias vimcolors="nvim $HOME/.vim/plugged/setcolors.vim/plugin/setcolors.vim"
+alias sourcerc="sudo nvim /etc/apt/sources.list"
+alias ali="cat $HOME/cmd/env/dotfiles/zsh/aliasrc"
+alias alias-locate="zsh -ixc : 2>&1 | grep"
+
+
+# SSH Related
+#Personal
+alias eden="reset; ssh root@104.236.11.204"
+alias rl2="reset; ssh root@45.76.28.108"
+alias raspi="reset; ssh pi@10.0.0.22"
+alias rcloud="reset; ssh root@45.76.19.31"
+alias sshchat="ssh ssh.chat"
+#Business
+alias chapman="reset; ssh pi@73.246.138.91"
+alias kob="kobkob"
+alias kobkob="reset; ssh root@161.35.4.161"
+alias k0b="reset; ssh root@64.227.17.43"
+alias iwd="reset; ssh root@104.207.139.28"
+alias oiwd="reset; ssh root@157.230.48.116"
+#Deprecated
+#alias lineage="reset; ssh u0_a194@10.0.0.82 -p 8022"
+
+
+#SSH MountPoints
+alias rl2mount="sshfs root@45.76.28.108:/var/www/redlink2.com/ $HOME/cmd/dev/web/sites/rl2/mount/main"
+alias rl2umount="sudo fusermount -u $HOME/cmd/dev/web/sites/rl2/mount/main"
+
+alias ogrl2mount="sshfs root@104.236.11.204:/var/www/redlink2.com/ $HOME/cmd/dev/web/sites/rl2/mount/altmount"
+alias ogrl2umount="sudo fusermount -u $HOME/cmd/dev/web/sites/rl2/mount/altmount"
+
+alias kobmount="sshfs root@161.35.4.161:/var/www/massivekobkob.com/ $HOME/cmd/dev/web/sites/kob/mount"
+alias kobumount="sudo fusermount -u $HOME/cmd/dev/web/sites/kob/mount"
+
+alias chapmount="sshfs pi@73.246.138.91:/ $HOME/cmd/env/mount/chapman"
+alias chapumount="sudo fusermount -u $HOME/cmd/env/mount/chapman"
+
+alias iwdmount="sshfs root@104.207.139.28:/var/www/iwannadie.fan/ $HOME/cmd/dev/web/sites/iwd/mount"
+alias iwdumount="sudo fusermount -u $HOME/cmd/dev/web/sites/iwd/mount"
+
+
+# PKG Managers
+alias apts="sudo apt-get install"
+alias apti="sudo aptitude"
+alias cloner="git clone"
+alias dpkgstatus="sudo nvim /var/lib/dpkg/status"
+alias dpkgrecent="grep installed /var/log/dpkg.log"
+alias installer="sudo dpkg -i"
+alias pipr="sudo /usr/bin/python3 -m pip"
+alias pip="pipx"
+alias snpm="sudo npm install"
+
+alias vpkgs="nvim ~/cmd/env/pkgs/pkgs"
+
+# NPM CMDs
+alias npbegin="npm init @vitejs/app"
+alias npstart="npm install"
+alias npopen="npm run dev"
+# NPM PKGS scheme=[npstartw="np(m) start w(ith) $APPNAME"]
+alias npstartw3="npm install three"
+alias npbuild="npm run build"
+
+# GIT CTL
+alias cx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotfiles --work-tree=$HOME"
+alias dx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
+#fresh install
+#0 - rm previous install
+alias dxdel="rm -rf $HOME/cmd/env/git/dotfiles"
+#1 - clone latest version of dotfiles
+alias dxclone="git clone --bare https://github.com/redlink2/dotfiles $HOME/cmd/env/git/dotfiles"
+#2 - install dotfiles
+alias dxcheck="dx checkout -f"
+
+#update
+#alias cxbranch="cx branch -m"
+#0 - check status
+alias dxstatus="dx status"
+#1 - update specific 
+alias dxalias="dx add ~/cmd/env/dotfiles/zsh/aliasrc"
+#2 - add commit info with -m flag
+alias dxcommit="dx commit"
+#3 - push update to master
+alias dxpush="dx push"
+
+# Quick CMDs
+alias cl="clear"
+alias lsa="hr --string=~!~# --colour-fg=red-bright; ls -a --color=auto; hr --string=~!~# --colour-fg=cyan-bright;"
+alias reboot="sudo reboot"
+alias rr="source ~/.zshrc"
+alias rb="source ~/.zshrc; reset;"
+alias rbs="reset"
+alias shutdown="sudo shutdown now"
+alias sudo='sudo '
+alias suwoo="sudo su -"
+alias vol="pactl set-sink-volume @DEFAULT_SINK@"
+
+
+# ZX Jump CMDs
+alias zxwebdev="cd ~/cmd/dev/web/sites"
+alias zxcmd="cd ~/cmd"
+alias zxclone="cd ~/cmd/env/pkgs/cloner"
+alias zxnoter="cd ~/cmd/dev/noter"
+alias zxworking="cd ~/cmd/working"
+alias zxpkgs"cd ~/cmd/env/pkgs"
+alias zxdotzsh"cd ~/cmd/env/dotfiles/zsh"
+alias zxdotvim="cd ~/cmd/env/dotfiles/vim"
+alias ~="cd ~/"
+
+# Vim eXplorer CMDs 
+alias vxwebdev="nvim ~/cmd/dev/web/sites"
+alias vxcmd="nvim ~/cmd"
+alias vxclone="nvim ~/cmd/env/pkgs/cloner"
+alias vxnoter="nvim ~/cmd/dev/noter"
+alias vxworking="nvim ~/cmd/working"
+alias vxpkgs"nvim ~/cmd/env/pkgs"
+alias vxdotzsh"nvim ~/cmd/env/dotfiles/zsh"
+alias vxdotvim="nvim ~/cmd/env/dotfiles/vim"
+alias ~="nvim ~/"
+
+
+# PKG CMDs
+alias cat="batcat"
+alias cbonsai="cbonsai -S -L 64 -m reddlink2"
+alias curl="curl --output - "
+alias diff="delta --dark --diff-so-fancy --navigate --line-numbers --hyperlinks"
+alias ipconfig="hostname -I; hr; myip"
+alias keepassxc="keepassxc.AppImage"
+alias notebook="nb"
+alias pipes="pipes-rs -r 0"
+alias spacechart="df -h"
+alias systctl="fuzzy-sys"
+alias top="bpytop"
+alias wayorx11="loginctl show-session $(awk '/tty/ {print $1}' <(loginctl)) -p Type | awk -F= '{print $2}'"
+alias ytdl="youtube-dl"
+#alias z="zoxide"
+
+
+# Curlrs
+alias moon="curl wttr.in/Moon"
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias news="curl getnews.tech/sources"
+alias party="curl parrot.live"
+alias path='echo -e ${PATH//:/\\n}'
+alias rand="sudo dd if=/dev/mem | cat | strings"
+alias rds="cat /dev/urandom | strings"
+alias telehack="telnet telehack.com"
+alias unlocker="fuser -k"
+alias weather="curl v2.wttr.in/Chicago"
+alias wintree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
+
+
+# Kitty CMDs
+alias tear="kitty @new-window"
