@@ -132,26 +132,28 @@ alias vol="pactl set-sink-volume @DEFAULT_SINK@"
 
 
 # ZX Jump CMDs
-alias zxwebdev="cd ~/cmd/dev/web/sites"
-alias zxcmd="cd ~/cmd"
-alias zxclone="cd ~/cmd/env/pkgs/cloner"
-alias zxnoter="cd ~/cmd/dev/noter"
-alias zxworking="cd ~/cmd/working"
-alias zxpkgs"cd ~/cmd/env/pkgs"
-alias zxdotzsh"cd ~/cmd/env/dotfiles/zsh"
-alias zxdotvim="cd ~/cmd/env/dotfiles/vim"
 alias ~="cd ~/"
+alias zxclone="cd ~/cmd/env/pkgs/cloner"
+alias zxcmd="cd ~/cmd"
+alias zxdotvim="cd ~/cmd/env/dotfiles/vim"
+alias zxdotzsh"cd ~/cmd/env/dotfiles/zsh"
+alias zxnoter="cd ~/cmd/dev/noter"
+alias zxpkgs"cd ~/cmd/env/pkgs"
+alias zxrl2="cd ~/cmd/dev/web/sites/rl2/gitty"
+alias zxwebdev="cd ~/cmd/dev/web/sites"
+alias zxworking="cd ~/cmd/working"
 
 # Vim eXplorer CMDs 
-alias vxwebdev="nvim ~/cmd/dev/web/sites"
+alias ~="nvim ~/"
 alias vxcmd="nvim ~/cmd"
 alias vxclone="nvim ~/cmd/env/pkgs/cloner"
-alias vxnoter="nvim ~/cmd/dev/noter"
-alias vxworking="nvim ~/cmd/working"
-alias vxpkgs"nvim ~/cmd/env/pkgs"
-alias vxdotzsh"nvim ~/cmd/env/dotfiles/zsh"
 alias vxdotvim="nvim ~/cmd/env/dotfiles/vim"
-alias ~="nvim ~/"
+alias vxdotzsh"nvim ~/cmd/env/dotfiles/zsh"
+alias vxnoter="nvim ~/cmd/dev/noter"
+alias vxpkgs"nvim ~/cmd/env/pkgs"
+alias vxrl2="nvim ~/cmd/dev/web/sites/rl2/gitty"
+alias vxwebdev="nvim ~/cmd/dev/web/sites"
+alias vxworking="nvim ~/cmd/working"
 
 
 # PKG CMDs
