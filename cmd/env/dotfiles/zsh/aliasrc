@@ -133,6 +133,7 @@ alias vol="pactl set-sink-volume @DEFAULT_SINK@"
 
 # ZX Jump CMDs
 alias ~="cd ~/"
+alias zxaseprite="cd ~/cmd/dev/art/pixel/aseprite"
 alias zxclone="cd ~/cmd/env/pkgs/cloner"
 alias zxcmd="cd ~/cmd"
 alias zxdotvim="cd ~/cmd/env/dotfiles/vim"
