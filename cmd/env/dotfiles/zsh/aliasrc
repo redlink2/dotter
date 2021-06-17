@@ -146,6 +146,7 @@ alias zxworking="cd ~/cmd/working"
 
 # Vim eXplorer CMDs 
 alias ~="nvim ~/"
+alias vxaseprite="nvim ~/cmd/dev/art/pixel/aseprite"
 alias vxcmd="nvim ~/cmd"
 alias vxclone="nvim ~/cmd/env/pkgs/cloner"
 alias vxdotvim="nvim ~/cmd/env/dotfiles/vim"
@@ -186,7 +187,3 @@ alias telehack="telnet telehack.com"
 alias unlocker="fuser -k"
 alias weather="curl v2.wttr.in/Chicago"
 alias wintree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
-
-
-# Kitty CMDs
-alias tear="kitty @new-window"
