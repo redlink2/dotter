@@ -182,6 +182,7 @@ alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias news="curl getnews.tech/sources"
 alias party="curl parrot.live"
 alias path='echo -e ${PATH//:/\\n}'
+alias popcat="curl popcatlive.herokuapp.com"
 alias rand="sudo dd if=/dev/mem | cat | strings"
 alias rds="cat /dev/urandom | strings"
 alias telehack="telnet telehack.com"
