@@ -96,7 +96,7 @@ alias cxpush="cx push"
 alias cxpull="cx pull"
 
 # REDLINK2
-alias rl="/usr/bin/git --git-dir=$HOME/cmd/env/git/redlink2.com --work-tree=$HOME/cmd/dev/web/sites/rl2/gitty"
+alias rl="/usr/bin/git --git-dir=$HOME/cmd/env/git/redlink2.com --work-tree=$HOME/cmd/dev/web/sites/rl2/git/gitty"
 #FRESH INSTALL
 #0 - rm previous install
 alias rldel="rm -rf $HOME/cmd/env/git/redlink2.com"
