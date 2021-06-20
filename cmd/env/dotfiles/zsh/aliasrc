@@ -141,7 +141,7 @@ alias zxdotvim="cd ~/cmd/env/dotfiles/vim"
 alias zxdotzsh"cd ~/cmd/env/dotfiles/zsh"
 alias zxnoter="cd ~/cmd/dev/noter"
 alias zxpkgs"cd ~/cmd/env/pkgs"
-alias zxrl2="cd ~/cmd/dev/web/sites/rl2/gitty"
+alias zxrl2="cd ~/cmd/dev/web/sites/rl2/git/gitty"
 alias zxwebdev="cd ~/cmd/dev/web/sites"
 alias zxworking="cd ~/cmd/working"
 
