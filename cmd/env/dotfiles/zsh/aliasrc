@@ -72,7 +72,9 @@ alias npbuild="npm run build"
 
 
 # GIT CTL
-#
+
+alias cxlazy="lazygit --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
+
 # DOTTY DOTFILES
 alias cx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
 #FRESH INSTALL
@@ -154,7 +156,7 @@ alias vxdotvim="nvim ~/cmd/env/dotfiles/vim"
 alias vxdotzsh"nvim ~/cmd/env/dotfiles/zsh"
 alias vxnoter="nvim ~/cmd/dev/noter"
 alias vxpkgs"nvim ~/cmd/env/pkgs"
-alias vxrl2="nvim ~/cmd/dev/web/sites/rl2/gitty"
+alias vxrl2="nvim ~/cmd/dev/web/sites/rl2/git"
 alias vxwebdev="nvim ~/cmd/dev/web/sites"
 alias vxworking="nvim ~/cmd/working"
 
