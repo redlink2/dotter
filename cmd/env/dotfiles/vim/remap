@@ -20,10 +20,13 @@ nnoremap <F3> :q<CR>
 nnoremap <F4> :edit<CR>
 
 "quick nav the buffer with F5/F6"
-nnoremap <F5> :blast<CR>
+nnoremap <F5> :bprevious<CR>
 nnoremap <F6> :bnext<CR>
 
-"Toggle highlighted search with F3
+"close error window with <F9>"
+nnoremap <F9> :lclose<CR>
+
+"Toggle highlighted search with  
 set hlsearch!
 nnoremap <F10> :set hlsearch!<CR>
 
@@ -57,8 +60,3 @@ let g:indent_guides_enable_on_vim_startup = 1
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=black
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
 
-"syntastic defaults"
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0

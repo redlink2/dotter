@@ -38,3 +38,6 @@ let &colorcolumn=80
 let mapleader = ","
 
 let g:rehash256 = 1
+
+"ycm lsp helpers"
+source ~/cmd/env/dotfiles/vim/ycm-lsp
