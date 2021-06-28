@@ -41,6 +41,7 @@ export PATH="$PATH:/home/redlink2/cmd/env/pkgs/lang/go/bin"
 export PATH="$PATH:/home/redlink2/.cargo/bin"
 export PATH="$PATH:/root/.cargo/bin"
 export PATH="$PATH:$PATH/.cargo/env"
+#export RUST_BACKTRACE="1"
 
 
 # Firefox touchscreen enable
