@@ -166,7 +166,7 @@ alias vxworking="nvim ~/cmd/working"
 
 
 # PKG CMDs
-alias cat="batcat"
+alias cat="bat"
 alias cbonsai="cbonsai -S -L 64 -m reddlink2"
 alias curl="curl --output - "
 alias diff="delta --dark --diff-so-fancy --navigate --line-numbers --hyperlinks"
