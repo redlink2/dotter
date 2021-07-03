@@ -164,7 +164,7 @@ alias vxrl2="nvim ~/cmd/dev/web/sites/rl2/git"
 alias vxwebdev="nvim ~/cmd/dev/web/sites"
 alias vxworking="nvim ~/cmd/working"
 
-
+alias vim="nvim"
 # PKG CMDs
 alias cat="bat"
 alias cbonsai="cbonsai -S -L 64 -m reddlink2"
