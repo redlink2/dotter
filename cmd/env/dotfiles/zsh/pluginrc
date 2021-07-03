@@ -20,7 +20,6 @@ plugins=(
 	nmap
 	pip
 	sudo
-#	thefuck
 	systemd
 	themes
 	torrent
@@ -73,11 +72,8 @@ source $HOME/cmd/env/pkgs/cloner/fuzzy-sys/fuzzy-sys.plugin.zsh
 #source $HOME/cmd/env/pkgs/cloner/k/k.plugin.zsh
 
 # Fresh for dotfiles
-source $HOME/.fresh/build/shell.sh
-
-# thefuck alias
-eval $(thefuck --alias)
+#source $HOME/.fresh/build/shell.sh
 
 # source zsh-syntax-highlighting for fish like highlights
 #source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $HOME/cmd/env/pkgs/cloner/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source $HOME/cmd/env/pkgs/cloner/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
