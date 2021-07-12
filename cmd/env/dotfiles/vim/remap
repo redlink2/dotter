@@ -40,8 +40,8 @@ noremap Y y$
 " Nvim
 "Enable mouse click for nvim
 set mouse=a
-"Fix cursor replacement after closing nvim"
-"set guicursor=a
+"set colorscheme"
+colorscheme blackbird
 
 
 "NERDtree
