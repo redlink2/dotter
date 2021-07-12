@@ -1,6 +1,8 @@
 # Core Export
 export PATH="$PATH:/home/redlink2/cmd"
+export PATH="$PATH:/home/redlink2/cmd/env/pkgs"
 export PATH="$PATH:/home/redlink2/cmd/env/pkgs/exe"
+export PATH="$PATH:/home/redlink2/cmd/env/pkgs/mine"
 
 # PKGS
 export PATH="$PATH:/home/redlink2/cmd/env/pkgs/cloner/diff-so-fancy"
