@@ -51,7 +51,6 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 "See invisible characters
 set list listchars=tab:>\ ,trail:+,eol:$
 
-
 "Deoplete init 
 "let g:deoplete#enable_at_startup = 1
 
@@ -60,3 +59,7 @@ let g:indent_guides_enable_on_vim_startup = 1
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=black
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
 
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
