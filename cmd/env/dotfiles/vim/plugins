@@ -25,6 +25,7 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'jdsimcoe/panic.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'felixhummel/setcolors.vim'
+Plug 'blackbirdtheme/vim'
 " Plug 'valloric/youcompleteme'
 " Plug 'sheerun/vim-polyglot'
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
