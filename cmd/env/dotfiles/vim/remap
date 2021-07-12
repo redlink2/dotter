@@ -40,9 +40,6 @@ noremap Y y$
 " Nvim
 "Enable mouse click for nvim
 set mouse=a
-"set colorscheme"
-colorscheme blackbird
-
 
 "NERDtree
 "NERDtree remaps"
