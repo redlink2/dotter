@@ -35,7 +35,7 @@ set list
 let &colorcolumn=80
 
 " Leader Key Assignment
-let mapleader = ","
+let mapleader = ";"
 
 let g:rehash256 = 1
 
