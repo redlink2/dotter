@@ -19,9 +19,11 @@ nnoremap <F3> :q<CR>
 "reload current doc for changes"
 nnoremap <F4> :edit<CR>
 
-"quick nav the buffer with F5/F6"
-nnoremap <F5> :bprevious<CR>
-nnoremap <F6> :bnext<CR>
+"quick nav the buffer with F5"
+nnoremap <F5> :bnext<CR>
+
+"quick nav tabs with F6"
+nnoremap <F6> :tabnext<CR>
 
 "close error window with <F9>"
 nnoremap <F9> :lclose<CR>
