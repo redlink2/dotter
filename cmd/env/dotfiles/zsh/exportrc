@@ -12,7 +12,6 @@ export PATH="$PATH:/home/redlink2/cmd/env/pkgs/cloner/bat-extras/src"
 export PATH="$PATH:/home/redlink2/cmd/env/pkgs/exe/pixelvision8"
 export PATH="$PATH:/home/redlink2/cmd/env/pkgs/exe/pico-8"
 export PATH="$PATH:/home/redlink2/cmd/env/pkgs/exe/steam"
-export PATH="$PATH:/home/redlink2/cmd/env/pkgs/exe/retroarch"
 export PATH="$PATH:/opt/firefox"
 export PATH="$PATH:/opt/neovide"
 export PATH="$PATH:/home/redlink2/cmd/env/pkgs/cloner/termpdf.py/"
@@ -31,15 +30,6 @@ export GOBIN="/home/redlink2/cmd/env/pkgs/lang/go/bin"
 export GOPATH="/home/redlink2/cmd/env/pkgs/lang/go"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/home/redlink2/cmd/env/pkgs/lang/go/bin"
-
-# Node
-#export PATH="$PATH:/home/redlink2/cmd/env/pkgs/lang/node.js/bin"
-#export PATH="$PATH:/home/redlink2/cmd/env/pkgs/lang/node.js/"
-
-# Deno bin
-#export DENO_INSTALL="/home/redlink2/.deno"
-#export DENO_INSTALL="/home/redlink2/.deno"
-#export PATH="$PATH:/home/redlink2/.deno/bin/"
 
 # Rust
 # Cargo Bin
