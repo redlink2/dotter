@@ -26,7 +26,7 @@ plugins=(
 	transfer
 	zsh-interactive-cd
 	zsh-reload
-	
+    zsh-syntax-highlighting
 	alias-tips
 	zsh-256color
 	clipboard
@@ -35,7 +35,6 @@ plugins=(
 	colors
 	emoji-fzf
     oh-my-matrix
-    zsh-syntax-highlighting
 )
 
 # fancy ctrl z x2
