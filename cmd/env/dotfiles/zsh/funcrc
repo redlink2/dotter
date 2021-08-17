@@ -48,7 +48,11 @@ fi
 
 IFS=$SAVEIFS
 
-
+function rustler {
+    cd ~/cmd/env/pkgs/cloner/rustlings
+    rustlings watch
+    cd ~/
+}
 
 
 # Zoxide source
