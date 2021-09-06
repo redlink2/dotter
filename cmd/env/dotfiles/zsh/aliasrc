@@ -64,7 +64,8 @@ alias snpm="sudo npm install"
 alias vpkgs="nvim ~/cmd/env/pkgs/pkgs"
 
 # NPM CMDs
-alias npbegin="npm init @vitejs/app"
+alias npbeginvite="npm init @vitejs/app"
+alias npbeginnuxt="npm init nuxt-app"
 alias npstart="npm install"
 alias npopen="npm run dev"
 # NPM PKGS scheme=[npstartw="np(m) start w(ith) $APPNAME"]
@@ -184,7 +185,6 @@ alias top="bpytop"
 alias topp="btm"
 alias wayorx11="loginctl show-session $(awk '/tty/ {print $1}' <(loginctl)) -p Type | awk -F= '{print $2}'"
 alias ytdl="youtube-dl"
-#alias z="zoxide"
 
 
 # Curlrs
