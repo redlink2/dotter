@@ -1,0 +1,63 @@
+#!/bin/bash
+
+PS3='Which NPM tool?: '
+options=("init" "install" "open" "build" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "init")
+            PS3='Which framework?: '
+            optionsframework=("Vite" "Nuxt" "Quit")
+            select opt in "${optionsframework[@]}"
+            do
+                case $opt in
+                    "Vite")
+                        echo "running: npm init @vitejs/app"
+                        npm init @vitejs/app
+                        break
+                        ;;
+                    "Nuxt")
+                        PS3='You must be in an empty directory to use this opt. Is this okay? Y/N: '
+                        optionsconfirm=("y" "n")
+                        select opt in "${optionsconfirm[@]}"
+                        do
+                            case $opt in
+                                "y")
+                                    echo "running: npm init nuxt-app"
+                                    npm init nuxt-app
+                                    break
+                                    ;;
+                                "n")
+                                    break
+                                    ;;
+                                "*") echo "yes or no answers only." ;;
+                            esac
+                        done
+                        ;;
+                    "Quit")
+                        break
+                        ;;
+                    "*") echo "guy, that is not supported...";;
+                esac
+            done
+            ;;
+        "install")
+            echo "running: npm install"
+            npm install
+            ;;
+        "open")
+            echo "running: npm run dev"
+            npm run dev
+            break
+            ;;
+        "build")
+            echo "running: npm build"
+            npm run build
+            break
+            ;;
+        "quit")
+            break
+            ;;
+        *) echo "doofus, $REPLY wasnt an option";;
+    esac
+done
