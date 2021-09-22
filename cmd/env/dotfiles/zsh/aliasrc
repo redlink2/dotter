@@ -16,10 +16,12 @@ alias alias-locate="zsh -ixc : 2>&1 | grep"
 
 # SSH Related
 #Personal
+alias rltop="reset; ssh redlink2@10.0.0.89"
 alias eden="reset; ssh root@104.236.11.204"
 alias rl2="reset; ssh root@45.76.28.108"
 alias raspi3="reset; ssh pi@10.0.0.22"
 alias raspi4="reset; ssh pi@10.0.0.8"
+alias raspi4pub="reset; ssh -p 8648 pi@99.55.206.56"
 alias rcloud="reset; ssh root@45.76.19.31"
 alias sshchat="ssh ssh.chat"
 #Business
@@ -178,7 +180,6 @@ alias ipconfig="hostname -I; hr; myip"
 alias keepassxc="keepassxc.AppImage"
 alias notebook="nb"
 alias pipes="pipes-rs -r 0"
-alias rm="rip"
 alias spacechart="df -h"
 alias systctl="fuzzy-sys"
 alias top="bpytop"
@@ -189,7 +190,7 @@ alias ytdl="youtube-dl"
 
 # Curlrs
 alias moon="curl wttr.in/Moon"
-alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias myip="echo 99.55.206.56; hostname -I"
 alias news="curl getnews.tech/sources"
 alias party="curl parrot.live"
 alias path='echo -e ${PATH//:/\\n}'
