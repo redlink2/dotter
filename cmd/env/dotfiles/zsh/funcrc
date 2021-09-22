@@ -51,7 +51,6 @@ IFS=$SAVEIFS
 function rustler {
     cd ~/cmd/env/pkgs/cloner/rustlings
     rustlings watch
-    cd ~/
 }
 
 
