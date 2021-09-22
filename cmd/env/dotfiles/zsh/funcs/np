@@ -18,16 +18,16 @@ do
                         ;;
                     "Nuxt")
                         PS3='You must be in an empty directory to use this opt. Is this okay? Y/N: '
-                        optionsconfirm=("y" "n")
+                        optionsconfirm=("continue" "cancel")
                         select opt in "${optionsconfirm[@]}"
                         do
                             case $opt in
-                                "y")
+                                "continue")
                                     echo "running: npm init nuxt-app"
                                     npm init nuxt-app
                                     break
                                     ;;
-                                "n")
+                                "cancel")
                                     break
                                     ;;
                                 "*") echo "yes or no answers only." ;;
