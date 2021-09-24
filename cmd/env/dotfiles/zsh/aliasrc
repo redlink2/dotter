@@ -66,19 +66,15 @@ alias snpm="sudo npm install"
 alias vpkgs="nvim ~/cmd/env/pkgs/pkgs"
 
 # NPM CMDs
-#alias npbeginvite="npm init @vitejs/app"
-#alias npbeginnuxt="npm init nuxt-app"
-#alias npstart="npm install"
-#alias npopen="npm run dev"
-# NPM PKGS scheme=[npstartw="np(m) start w(ith) $APPNAME"]
-#alias npstartw3="npm install three"
-#alias npbuild="npm run build"
+alias npmxvite="npm init vite@latest"
+alias npmxnuxt="npm init nuxt-app"
+alias npmxstart="npm install && npm run dev"
+alias npmxbuild="npm run build"
+alias npmxadd3js="npm install three"
 
 
 # GIT CTL
-
 alias cxlazy="lazygit --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
-
 # DOTTY DOTFILES
 alias cx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
 #FRESH INSTALL
