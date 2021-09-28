@@ -69,6 +69,7 @@ alias vpkgs="nvim ~/cmd/env/pkgs/pkgs"
 alias npmxvite="npm init vite@latest"
 alias npmxnuxt="npm init nuxt-app"
 alias npmxstart="npm install && npm run dev"
+alias npmxstarthost="npm install && npm run dev:host"
 alias npmxbuild="npm run build"
 alias npmxadd3js="npm install three"
 
