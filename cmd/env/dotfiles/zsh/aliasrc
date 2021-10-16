@@ -65,19 +65,27 @@ alias snpm="sudo npm install"
 
 alias vpkgs="nvim ~/cmd/env/pkgs/pkgs"
 
-# NPM CMDs
-alias npmxvite="npm init vite@latest"
-alias npmxnuxt="npm init nuxt-app"
-alias npmxstart="npm install && npm run dev"
-alias npmxstarthost="npm install && npm run dev:host"
-alias npmxbuild="npm run build"
-alias npmxadd3js="npm install three"
-
+# nuxt3
+alias n3init="npx nuxi init"
+alias n3install="yarn install"
+alias n3starto="yarn dev -o"
+alias n3start="yarn dev"
+# nuxt2
+alias n2host="yarn dev:host"
+alias n3build="yarn build"
+alias n2init="yarn create nuxt-app"
+alias n2start="yarn dev"
+alias n2host="yarn dev:host"
+alias n2build="yarn build; yarn start"
+# universal
+alias nuxtadd3js="yarn add three"
 
 # GIT CTL
 alias cxlazy="lazygit --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
+alias rllazy="lazygit --git-dir=$HOME/cmd/dev/web/sites/rl2/git/bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/redlink2.com"
 # DOTTY DOTFILES
 alias cx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
+alias rlg="/usr/bin/git --git-dir=$HOME/cmd/dev/web/sites/rl2/git/bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/redlink2.com"
 #FRESH INSTALL
 #0 - rm previous install
 alias cxdel="rm -rf $HOME/cmd/env/git/dotfiles"
