@@ -82,10 +82,13 @@ alias nuxtadd3js="yarn add three"
 
 # GIT CTL
 alias cxlazy="lazygit --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
-alias rllazy="lazygit --git-dir=$HOME/cmd/dev/web/sites/rl2/git/bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/redlink2.com"
+#alias rllazy="lazygit --git-dir=$HOME/cmd/dev/web/sites/rl2/git/og/bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/og/redlink2.com"
+alias rllazy1="lazygit --git-dir=$HOME/cmd/dev/web/sites/rl2/git/rl2.com/.bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/rl2.com/main"
+alias rllazy2="lazygit --git-dir=$HOME/cmd/dev/web/sites/rl2/git/rl2.com/.bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/rl2.com/nuxt3"
 # DOTTY DOTFILES
 alias cx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
-alias rlg="/usr/bin/git --git-dir=$HOME/cmd/dev/web/sites/rl2/git/bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/redlink2.com"
+#alias rlg="/usr/bin/git --git-dir=$HOME/cmd/dev/web/sites/rl2/git/og/bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/og/redlink2.com"
+alias rlg="/usr/bin/git --git-dir=$HOME/cmd/dev/web/sites/rl2/git/og/bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/og/redlink2.com"
 #FRESH INSTALL
 #0 - rm previous install
 alias cxdel="rm -rf $HOME/cmd/env/git/dotfiles"
@@ -106,28 +109,30 @@ alias cxpush="cx push"
 #4 - update local repo with remote
 alias cxpull="cx pull"
 
+
+# TODO FIX OR REMOVE
 # REDLINK2
-alias rl="/usr/bin/git --git-dir=$HOME/cmd/env/git/redlink2.com --work-tree=$HOME/cmd/dev/web/sites/rl2/git/gitty"
+#alias rl="/usr/bin/git --git-dir=$HOME/cmd/env/git/redlink2.com --work-tree=$HOME/cmd/dev/web/sites/rl2/git/gitty"
 #FRESH INSTALL
 #0 - rm previous install
-alias rldel="rm -rf $HOME/cmd/env/git/redlink2.com"
+#alias rldel="rm -rf $HOME/cmd/env/git/redlink2.com"
 #1 - clone latest version of dotfiles
-alias rlclone="git clone --bare https://github.com/redlink2/dotfiles $HOME/cmd/env/git/redlink2.com"
+#alias rlclone="git clone --bare https://github.com/redlink2/dotfiles $HOME/cmd/env/git/redlink2.com"
 #2 - install dotfiles
-alias rlcheck="rl checkout -f"
+#alias rlcheck="rl checkout -f"
 #COMMIT AND PUSH
 #alias rlbranch="rl branch -m"
 #0 - check status
-alias rlstatus="rl status"
+#alias rlstatus="rl status"
 #1 - update specific 
-alias rladd="rl add"
+#alias rladd="rl add"
 #alias rlalias="rl add ~/cmd/env/dotfiles/zsh/aliasrc"
 #2 - add commit info with -m flag
-alias rlcommit="rl commit"
+#alias rlcommit="rl commit"
 #3 - push update to master
-alias rlpush="rl push"
+#alias rlpush="rl push"
 #4 - update local repo with remote
-alias rlpull="rl pull"
+#alias rlpull="rl pull"
 
 
 # Quick CMDs
