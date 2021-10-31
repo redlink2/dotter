@@ -29,8 +29,8 @@ alias chapman="reset; ssh pi@73.246.138.91"
 alias kob="kobkob"
 alias kobkob="reset; ssh root@161.35.4.161"
 alias k0b="reset; ssh root@64.227.17.43"
-alias iwd="reset; ssh root@104.207.139.28"
-alias oiwd="reset; ssh root@157.230.48.116"
+alias iwd="reset; ssh root@149.28.113.170"
+alias oiwd="reset; ssh root@104.207.139.28"
 #Deprecated
 #alias lineage="reset; ssh u0_a194@10.0.0.82 -p 8022"
 
