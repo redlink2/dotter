@@ -13,7 +13,6 @@ alias sourcerc="sudo nvim /etc/apt/sources.list"
 alias ali="cat $HOME/cmd/env/dotfiles/zsh/aliasrc"
 alias alias-locate="zsh -ixc : 2>&1 | grep"
 
-
 # SSH Related
 #Personal
 alias rltop="reset; ssh redlink2@10.0.0.89"
@@ -25,7 +24,6 @@ alias raspi4pub="reset; ssh -p 8648 pi@99.55.206.56"
 alias rcloud="reset; ssh root@45.76.19.31"
 alias sshchat="ssh ssh.chat"
 #Business
-alias chapman="reset; ssh pi@73.246.138.91"
 alias kob="kobkob"
 alias kobkob="reset; ssh root@161.35.4.161"
 alias k0b="reset; ssh root@64.227.17.43"
@@ -34,26 +32,24 @@ alias oiwd="reset; ssh root@104.207.139.28"
 #Deprecated
 #alias lineage="reset; ssh u0_a194@10.0.0.82 -p 8022"
 
-
 #SSH MountPoints
+# redlink2
 alias rl2mount="sshfs root@45.76.28.108:/var/www/redlink2.com/ $HOME/cmd/dev/web/sites/rl2/mount/main"
 alias rl2umount="sudo fusermount -u $HOME/cmd/dev/web/sites/rl2/mount/main"
-
+# old redlink2
 alias ogrl2mount="sshfs root@104.236.11.204:/var/www/redlink2.com/ $HOME/cmd/dev/web/sites/rl2/mount/altmount"
 alias ogrl2umount="sudo fusermount -u $HOME/cmd/dev/web/sites/rl2/mount/altmount"
-
+# massivekobkob
 alias kobmount="sshfs root@161.35.4.161:/var/www/massivekobkob.com/ $HOME/cmd/dev/web/sites/kob/mount"
 alias kobumount="sudo fusermount -u $HOME/cmd/dev/web/sites/kob/mount"
-
-alias chapmount="sshfs pi@73.246.138.91:/ $HOME/cmd/env/mount/chapman"
-alias chapumount="sudo fusermount -u $HOME/cmd/env/mount/chapman"
-
+# iwannadie.fan
 alias iwdmount="sshfs root@104.207.139.28:/var/www/iwannadie.fan/ $HOME/cmd/dev/web/sites/iwd/mount"
 alias iwdumount="sudo fusermount -u $HOME/cmd/dev/web/sites/iwd/mount"
 
-
 # PKG Managers
 alias apts="sudo apt-get install"
+alias aptu="sudo apt-get update"
+alias aptug="sudo apt-get upgrade"
 alias apti="sudo aptitude"
 alias cloner="git clone"
 alias dpkgstatus="sudo nvim /var/lib/dpkg/status"
@@ -70,9 +66,10 @@ alias n3init="npx nuxi init"
 alias n3install="yarn install"
 alias n3starto="yarn dev -o"
 alias n3start="yarn dev"
+alias n3build="yarn build"
+alias n3gen="yarn generate"
 # nuxt2
 alias n2host="yarn dev:host"
-alias n3build="yarn build"
 alias n2init="yarn create nuxt-app"
 alias n2start="yarn dev"
 alias n2host="yarn dev:host"
@@ -82,71 +79,25 @@ alias nuxtadd3js="yarn add three"
 
 # GIT CTL
 alias cxlazy="lazygit --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
-#alias rllazy="lazygit --git-dir=$HOME/cmd/dev/web/sites/rl2/git/og/bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/og/redlink2.com"
-alias rllazy1="lazygit --git-dir=$HOME/cmd/dev/web/sites/rl2/git/rl2.com/.bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/rl2.com/main"
-alias rllazy2="lazygit --git-dir=$HOME/cmd/dev/web/sites/rl2/git/rl2.com/.bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/rl2.com/nuxt3"
-# DOTTY DOTFILES
+alias rllazy="lazygit --git-dir=$HOME/cmd/dev/web/sites/rl2/git/rl2.com/.bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/rl2.com/main"
+
+# DOTTY CTL
 alias cx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
-#alias rlg="/usr/bin/git --git-dir=$HOME/cmd/dev/web/sites/rl2/git/og/bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/og/redlink2.com"
 alias rlg="/usr/bin/git --git-dir=$HOME/cmd/dev/web/sites/rl2/git/og/bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/og/redlink2.com"
-#FRESH INSTALL
-#0 - rm previous install
-alias cxdel="rm -rf $HOME/cmd/env/git/dotfiles"
-#1 - clone latest version of dotfiles
-alias cxclone="git clone --bare https://github.com/redlink2/dotfiles $HOME/cmd/env/git/dotfiles"
-#2 - install dotfiles
-alias cxcheck="cx checkout -f"
-#UPDATE
-#alias cxbranch="cx branch -m"
-#0 - check status
-alias cxstatus="cx status"
-#1 - update specific 
-alias cxalias="cx add ~/cmd/env/dotfiles/zsh/aliasrc"
-#2 - add commit info with -m flag
-alias cxcommit="cx commit"
-#3 - push update to master
-alias cxpush="cx push"
-#4 - update local repo with remote
-alias cxpull="cx pull"
-
-
-# TODO FIX OR REMOVE
-# REDLINK2
-#alias rl="/usr/bin/git --git-dir=$HOME/cmd/env/git/redlink2.com --work-tree=$HOME/cmd/dev/web/sites/rl2/git/gitty"
-#FRESH INSTALL
-#0 - rm previous install
-#alias rldel="rm -rf $HOME/cmd/env/git/redlink2.com"
-#1 - clone latest version of dotfiles
-#alias rlclone="git clone --bare https://github.com/redlink2/dotfiles $HOME/cmd/env/git/redlink2.com"
-#2 - install dotfiles
-#alias rlcheck="rl checkout -f"
-#COMMIT AND PUSH
-#alias rlbranch="rl branch -m"
-#0 - check status
-#alias rlstatus="rl status"
-#1 - update specific 
-#alias rladd="rl add"
-#alias rlalias="rl add ~/cmd/env/dotfiles/zsh/aliasrc"
-#2 - add commit info with -m flag
-#alias rlcommit="rl commit"
-#3 - push update to master
-#alias rlpush="rl push"
-#4 - update local repo with remote
-#alias rlpull="rl pull"
-
 
 # Quick CMDs
-alias cl="clear"
 alias lsa="hr --string=~!~# --colour-fg=red-bright; ls -a --color=auto; hr --string=~!~# --colour-fg=cyan-bright;"
+alias path='echo -e ${PATH//:/\\n}'
 alias reboot="sudo reboot"
+alias rand="sudo dd if=/dev/mem | cat | strings"
+alias rds="cat /dev/urandom | strings"
 alias rr="source ~/.zshrc"
 alias rb="source ~/.zshrc; reset;"
-alias rbs="reset"
 alias shutdown="sudo shutdown now"
-alias sudo='sudo '
 alias suwoo="sudo su -"
+alias unlocker="fuser -k"
 alias vol="pactl set-sink-volume @DEFAULT_SINK@"
-
+alias wintree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
 
 # ZX Jump CMDs
 alias ~="cd ~/"
@@ -157,6 +108,7 @@ alias zxdev="cd ~/cmd/dev"
 alias zxrust="cd ~/cmd/dev/lang/rust"
 alias zxdotvim="cd ~/cmd/env/dotfiles/vim"
 alias zxdotzsh="cd ~/cmd/env/dotfiles/zsh"
+alias zxkraken="cd ~/cmd/dev/git/kraken"
 alias zxnoter="cd ~/cmd/dev/noter"
 alias zxpkgs="cd ~/cmd/env/pkgs"
 alias zxrl2="cd ~/cmd/dev/web/sites/rl2"
@@ -167,12 +119,15 @@ alias zxworking="cd ~/cmd/working"
 # Vim eXplorer CMDs 
 alias ~="nvim ~/"
 alias vxaseprite="nvim ~/cmd/dev/art/pixel/aseprite"
+alias vxclone="nvim ~/cmd/env/pkgs/cloner"
 alias vxcmd="nvim ~/cmd"
 alias vxdev="nvim ~/cmd/dev"
 alias vxrust="nvim ~/cmd/dev/lang/rust"
 alias vxclone="nvim ~/cmd/env/pkgs/cloner"
 alias vxdotvim="nvim ~/cmd/env/dotfiles/vim"
 alias vxdotzsh="nvim ~/cmd/env/dotfiles/zsh"
+alias vxkraken="nvim ~/cmd/dev/git/kraken"
+alias vxkraken="nvim ~/cmd/dev/web/sites/rl2/git/kraken"
 alias vxnoter="nvim ~/cmd/dev/noter"
 alias vxpkgs="nvim ~/cmd/env/pkgs"
 alias vxrl2="nvim ~/cmd/dev/web/sites/rl2"
@@ -180,7 +135,6 @@ alias vxrustler="nvim ~/cmd/env/pkgs/cloner/rustlings/exercises/"
 alias vxwebdev="nvim ~/cmd/dev/web/sites"
 alias vxworking="nvim ~/cmd/working"
 
-alias vim="nvim"
 # PKG CMDs
 alias cat="bat"
 alias cbonsai="cbonsai -S -L 64 -m reddlink2"
@@ -192,22 +146,17 @@ alias notebook="nb"
 alias pipes="pipes-rs -r 0"
 alias spacechart="df -h"
 alias systctl="fuzzy-sys"
-alias top="bpytop"
-alias topp="btm"
+alias topp="bpytop"
+alias top="btm"
+alias vim="nvim"
 alias wayorx11="loginctl show-session $(awk '/tty/ {print $1}' <(loginctl)) -p Type | awk -F= '{print $2}'"
 alias ytdl="youtube-dl"
-
 
 # Curlrs
 alias moon="curl wttr.in/Moon"
 alias myip="echo 99.55.206.56; hostname -I"
 alias news="curl getnews.tech/sources"
 alias party="curl parrot.live"
-alias path='echo -e ${PATH//:/\\n}'
 alias popcat="curl popcatlive.herokuapp.com"
-alias rand="sudo dd if=/dev/mem | cat | strings"
-alias rds="cat /dev/urandom | strings"
 alias telehack="telnet telehack.com"
-alias unlocker="fuser -k"
 alias weather="curl v2.wttr.in/Chicago"
-alias wintree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"

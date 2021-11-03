@@ -15,39 +15,31 @@ export PATH="$PATH:/home/redlink2/cmd/env/pkgs/exe/pico-8"
 export PATH="$PATH:/home/redlink2/cmd/env/pkgs/exe/steam"
 export PATH="$PATH:/opt/firefox"
 export PATH="$PATH:/opt/neovide"
-export PATH="$PATH:/home/redlink2/cmd/env/pkgs/cloner/termpdf.py/"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 
 # Frameworks
-
 # Python
 export PATH="$PATH:/usr/share/python3"
 export PATH="$PATH:/home/redlink2/.local/bin"
 export PATH="$PATH:/root/.local/bin"
-
 # Go
 export GOBIN="/home/redlink2/cmd/env/pkgs/lang/go/bin"
 export GOPATH="/home/redlink2/cmd/env/pkgs/lang/go"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/home/redlink2/cmd/env/pkgs/lang/go/bin"
-
 # Rust
 # Cargo Bin
 export PATH="$PATH:/home/redlink2/.cargo/bin"
 export PATH="$PATH:/root/.cargo/bin"
 export PATH="$PATH:$PATH/.cargo/env"
 #export RUST_BACKTRACE="1"
-
-# FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # Firefox touchscreen enable
 export MOZ_USE_XINPUT2=1
-
+# Yarn version manager
 export YVM_DIR=/home/redlink2/.yvm
 [ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
-
+# Node version manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
