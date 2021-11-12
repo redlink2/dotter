@@ -61,20 +61,20 @@ alias snpm="sudo npm install"
 
 alias vpkgs="nvim ~/cmd/env/pkgs/pkgs"
 
-# nuxt3
+# Nuxt3
 alias n3init="npx nuxi init"
 alias n3install="yarn install"
 alias n3starto="yarn dev -o"
 alias n3start="yarn dev"
 alias n3build="yarn build"
 alias n3gen="yarn generate"
-# nuxt2
+# Nuxt2
 alias n2host="yarn dev:host"
 alias n2init="yarn create nuxt-app"
 alias n2start="yarn dev"
 alias n2host="yarn dev:host"
 alias n2build="yarn build; yarn start"
-# universal
+# Universal
 alias nuxtadd3js="yarn add three"
 
 # GIT CTL
