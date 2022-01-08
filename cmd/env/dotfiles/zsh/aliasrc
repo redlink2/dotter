@@ -50,7 +50,7 @@ alias iwdumount="sudo fusermount -u $HOME/cmd/dev/web/sites/iwd/mount"
 # PKG Managers
 alias apts="sudo apt-get install -y"
 alias aptu="sudo apt-get update"
-alias aptug="sudo apt-get upgrade"
+alias aptug="sudo apt-get upgrade -y"
 alias apti="sudo aptitude"
 alias cloner="git clone"
 alias dpkgstatus="sudo nvim /var/lib/dpkg/status"
@@ -89,6 +89,7 @@ alias cx="/usr/bin/git --git-dir=$HOME/cmd/env/git/dotty --work-tree=$HOME"
 alias rlg="/usr/bin/git --git-dir=$HOME/cmd/dev/web/sites/rl2/git/og/bare --work-tree=$HOME/cmd/dev/web/sites/rl2/git/og/redlink2.com"
 
 # Quick CMDs
+alias ls="ptls"
 alias lsa="hr --string=~!~# --colour-fg=red-bright; ls -a --color=auto; hr --string=~!~# --colour-fg=cyan-bright;"
 alias path='echo -e ${PATH//:/\\n}'
 alias reboot="sudo reboot"
